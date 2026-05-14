@@ -101,6 +101,20 @@ The setup wizard walks you through everything, but you'll need at least one of t
 
 - `OPENAI_API_KEY` - For GPT 5.5 and Sora video generation
 - `ANTHROPIC_API_KEY` - For Claude models
+- **OR run local models** with Ollama/llama.cpp (no API key needed!)
+
+**Local Models (Free, No API Key):**
+
+- **Ollama** - Run Qwen 2.5, Llama 3.1, DeepSeek Coder locally
+  - Set: `DEFAULT_MODEL=litellm/ollama/qwen2.5:72b`
+  - Install: `curl -fsSL https://ollama.com/install.sh | sh`
+- **llama.cpp** - Run GGUF models locally
+  - Set: `DEFAULT_MODEL=litellm/llamacpp/path/to/model.gguf`
+
+**Alternative APIs:**
+
+- `DEEPSEEK_API_KEY` - DeepSeek models (cost-effective alternative)
+- `OPENROUTER_API_KEY` - Access 100+ models through OpenRouter
 
 **Optional superpowers:**
 
