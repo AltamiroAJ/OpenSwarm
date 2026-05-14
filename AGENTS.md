@@ -1,12 +1,14 @@
 # OpenSwarm — Customization Guide
 
-This file gives coding agents (Cursor, Claude Code, Codex, etc.) everything they need to understand and customize this swarm. Read it before making any changes.
+This file gives coding agents (Cursor, Claude Code, Qwen Coder, Codex, etc.) everything they need to understand and customize this swarm. Read it before making any changes.
 
 ---
 
 ## What is OpenSwarm?
 
 OpenSwarm is a multi-agent AI team you can fork and reshape into any kind of swarm you need — SEO, sales, research, finance, customer support, or anything else. Each agent is a specialist. They collaborate through a shared orchestrator.
+
+**✨ Now supports local models!** Run OpenSwarm with Ollama, llama.cpp, DeepSeek, or OpenRouter — no API key required for local models.
 
 ---
 
@@ -117,6 +119,14 @@ The coding agent will read this file, understand the structure, and make the rig
 - Tools live in `tools/` and are auto-loaded by the agent definition
 - `shared_tools/` contains Composio-powered integrations (Gmail, Slack, GitHub, etc.) available to all agents
 - Models are configured via `DEFAULT_MODEL` in `.env` — never hardcoded
+- **Local models supported**: Ollama, llama.cpp (no API key needed)
+- **Alternative providers**: DeepSeek, OpenRouter via LiteLLM routing
+
+### Documentation Files
+
+- `QWEN.md` — Qwen Coder setup guide with local model instructions
+- `LOCAL_MODELS.md` — Quick reference for Ollama, llama.cpp, DeepSeek, OpenRouter setup
+- `.cursor/rules/agency-swarm-workflow.mdc` — Agent creation workflow guide
 
 Before proceeding with agent creation, please read the following instructions carefully:
 
